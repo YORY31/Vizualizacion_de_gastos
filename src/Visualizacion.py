@@ -41,3 +41,8 @@ plt.title('Evolucion de ingresos y gastos por mes')
 plt.ylabel('Monto')
 plt.show()
 
+
+plt.figure(figsize=(10,6))
+sns.boxplot(x='Categoria', y='Monto', data=df)
+plt.title('Distribucion de montos por categoria')
+plt.show()
